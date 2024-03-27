@@ -34,6 +34,7 @@ img{
 
 .header{
     border-bottom: 1px solid #e7e9fc;
+    box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 
 .header-container {
@@ -90,11 +91,13 @@ letter-spacing: 0.02em;
 display: block;
 padding-top: 24px;
 padding-bottom: 24px;
+transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 address{
     font-style: normal;
     margin-left: auto;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .contacts{
@@ -105,6 +108,7 @@ font-weight: 400;
 line-height: 1.5;
 letter-spacing: 0.02em;
 text-align: left;
+transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .contacts:hover, .contacts:focus{
     color: #404bbf;
@@ -131,6 +135,7 @@ transition: background-color 250ms;
 }
 
 .section-one{
+    max-width: 1440px;
     background-color: #2E2F42;
     padding-top: 188px;
     padding-bottom: 188px;
@@ -141,9 +146,6 @@ transition: background-color 250ms;
       rgba(46, 47, 66, 0.7)
     ),
     url(../images/people-office.jpg);
-  background-repeat: no-repeat, no-repeat;
-  background-position: center, center;
-  background-size: cover, cover;
 }
 
 .title{
@@ -175,6 +177,7 @@ border-radius: 4px;
 gap: 10px;
 display: block;
 border: none;
+transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1); 
 }
 .button:hover, .button:focus{
     background-color: #404BBF;
@@ -262,6 +265,7 @@ margin-bottom: 72px;
 background-color: #FFFFFF;
 width: calc((100% - 72px) / 4);
 border-radius: 0px 0px 4px 4px;
+box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
 .name-prof{
@@ -348,6 +352,8 @@ transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
     height: 100%;
     top: 0;
     left: 0;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
     padding: 40px 32px;
     position: absolute;
     color: #f4f4fd;
@@ -419,6 +425,10 @@ letter-spacing: 0.02em;
 color: #F4F4FD;
 }
 
+.footer-social-all{
+    display: flex;
+    align-items: baseline;
+}
 
 .footer-logo-text{
     margin-right: 120px;
@@ -427,8 +437,9 @@ color: #F4F4FD;
 .footer-text {
     color: #FFFFFF;
     font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
     margin-bottom: 16px;
-    margin-right: 120px;
 }
 
 .footer-social {
